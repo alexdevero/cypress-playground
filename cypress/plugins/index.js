@@ -19,4 +19,15 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+  config.browsers.push({
+    name: 'Brave',
+    family: 'chromium',
+    channel: 'stable',
+    displayName: 'Brave',
+    version: '1.31.91',
+    path: 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe',
+    majorVersion: '1'
+  })
+
+  return config
 }
